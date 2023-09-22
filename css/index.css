@@ -1,0 +1,227 @@
+:root {
+    --VeryLightGrayishBlue: hsl(240, 78%, 98%);
+    --LightGrayishBlue: hsl(234, 14%, 74%);
+    --GrayishBlue: hsl(233, 13%, 49%);
+    --DarkGrayishBlue: hsl(232, 13%, 33%);
+    --LinearGradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("/images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: top  left 15rem;
+    background-size: contain;
+}
+
+.pricing {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pricing h1 {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--GrayishBlue);
+    margin-top: 3rem;
+}
+
+.specify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    color: var(--LightGrayishBlue);
+}
+
+.toggle {
+    max-width: 25%;  
+    background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+.white-toggle {
+    max-width: 40%;
+    background-color: var(--VeryLightGrayishBlue);
+    padding: 1rem;
+    margin-left: 2rem;
+    border-radius: 30px;
+}
+
+.general {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.center {
+    background-color: var(--VeryLightGrayishBlue);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 70vh;
+    margin-top: 4rem;
+}
+.basic {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+}
+
+.basic h2 {
+    color: var(--GrayishBlue);
+}
+
+.first {
+    color: var(--DarkGrayishBlue);
+    font-size: 5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.line {
+    width: 80%;
+    border-bottom: 1px solid var(--VeryLightGrayishBlue);
+    margin: 0 auto;
+}
+
+.dark {
+    border-bottom: 1px solid var(--GrayishBlue);
+}
+
+.basic p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--GrayishBlue);
+}
+
+button {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border-style: none;
+    background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    margin: 0 auto;
+    color: var(--VeryLightGrayishBlue);
+}
+
+.middle-button {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border-style: none;
+    background: var(--VeryLightGrayishBlue);
+    margin: 0 auto;
+    color: var(--GrayishBlue);
+}
+.center-middle {
+    background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 70vh;
+    margin-top: 1rem;
+}
+.professional {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+}
+
+.professional h2 {
+    color: var(--VeryLightGrayishBlue);
+}
+
+.second {
+    color: var(--VeryLightGrayishBlue);
+    font-size: 5rem;
+}
+
+.professional p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--VeryLightGrayishBlue);
+
+}
+.master {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+}
+
+.master h2 {
+    color: var(--GrayishBlue);
+}
+
+.third {
+    color: var(--DarkGrayishBlue);
+    font-size: 5rem;
+}
+.master p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--GrayishBlue);
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+
+@media  (min-width: 400px) {
+    .general {
+        flex-direction: row;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .center {
+        height: 70vh;
+        width: 50%;
+    }
+    .center-middle {
+        width: 50%;
+        height: 80vh;
+    }
+    .specify {
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    .attribution {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container {
+        background-image: url("/images/bg-top.svg"), url("/images/bg-bottom.svg");
+        background-repeat: no-repeat;
+        background-position: right top, bottom left;
+    }
+   
+}
